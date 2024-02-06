@@ -34,3 +34,8 @@ function toggleDiv(bannerId) {
       }
   });
 }
+
+const modal = document.getElementById("layer");
+function openModal(){
+  modal.classList.toggle("hidden");
+}

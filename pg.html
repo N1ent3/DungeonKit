@@ -11,6 +11,7 @@
     </head>
 
     <body>
+        <div id ="layer" class="hidden" onclick="openModal()"></div>
         <header>
             <img class="headerimg" src="/images/logo.PNG">
         </header>
@@ -32,44 +33,13 @@
             </div>
         </nav>
         <div class="pg">
-            <div class="container">
-                <aside id="asideimg">
-                    <img class="bigimage" src="/images/races.PNG" title="Razze">
-                    <img class="bigimage" src="/images/classes.PNG" title="Classi">
-                </aside>
-                <div class="content">
-                    <section>
-                        <h1>RAZZE</h1>
-                    </section>
-                    <aside>
-                        <article class="articleaside">
-                            <h2>Elfi</h2>
-                            <p>Gli elfi sono una razza di creature affascinanti, agili e intrise di magia. Essi sono spesso rappresentati come esseri slanciati e bellissimi, con orecchie appuntite e occhi affilati. Gli elfi vivono per secoli, mantenendo una giovinezza e una vitalità che sfidano il passare del tempo. Sono spesso associati alla natura, alla magia e alla grazia.</p>
-                        </article>
-                        <aside>
-                            <img class="smallimage" title="Elfo" src="/images/elf.PNG">
-                        </aside>
-                        <article>
-                            <h3>Caratteristiche</h3>
-                            <ul>
-                                <li>Agilità: Gli elfi sono noti per la loro agilità e velocità. Sono abili nelle arti del movimento silenzioso e dell'evasione.</li>
-                                <li>Visione notturna: Gli elfi hanno la capacità di vedere al buio, il che li rende eccellenti nei confronti notturni.</li>
-                                <li>Resistenza alla magia: Gli elfi mostrano una naturale resistenza alla magia e sono in grado di resistere a incantesimi e effetti magici.</li>
-                            </ul>
-                        </article>
-                    </aside>
-                    <div class="text">
-                        <p>Sottoclassi:
-                            <ul>
-                                <li>Alti Elfi (High Elves)</li>
-                                <li>Boscaioli (Wood Elves)</li>
-                                <li>Elfi d'Argento (Drow)</li>
-
-                            </ul>
-                        </p>
-                    </div>
-                    <img class="smallimage" title="Drow" src="/images/drow.PNG">
+            <div class="content">
+                <div class="bottoneclassi" onclick="openModal()">
+                    <h1>CLASSI</h1>
                 </div>
+            </div>
+                   
+                <!--
                 <div class="content">
                     <section>
                         <h1>CLASSI</h1>
@@ -94,7 +64,7 @@
                         <p>I druidi seguono un allineamento neutrale, in quanto sono preoccupati per l'equilibrio naturale piuttosto che per concetti di bene o male.</p>
                     </div>
                     <img class="smallimage" title="Druido" src="/images/druid.WEBP">
-                </div>
+                </div> -->
             </div>
         </div>
         <footer><p>Made By Stefano Massa</p></footer>
