@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author">
+        <meta content="dark light" name="color-scheme">
+        <title>DungeonKit - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylehome.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="headerimg" src="images/logo.PNG">
+        </header>
+        <nav>
+            <a class="active">
+                <img class="icon" src="/images/nav/homeactive.PNG">HOME</a>
+            <a href="pg.html">
+                <img class="icon" src="/images/nav/pg.PNG">PERSONAGGIO</a>
+            <div class="dropdown">
+                <button id="dropbtn" onclick="toggleDropdown()" class="dropbtn">
+                    <img class="icon" src="/images/nav/dice.PNG">Dadi</button>
+                <div id="diceDropdown" class="dropdown-content">
+                    <button class="buttonclick" onclick="rollDice(6, 'd6')" id="d6">D6</button>
+                    <button class="buttonclick" onclick="rollDice(8, 'd8')" id="d8">D8</button>
+                    <button class="buttonclick" onclick="rollDice(10, 'd10')" id="d10">D10</button>
+                    <button class="buttonclick" onclick="rollDice(12, 'd12')" id="d12">D12</button>
+                    <button class="buttonclick" onclick="rollDice(20, 'd20')" id="d20">D20</button>
+                </div>
+            </div>
+        </nav>
+        <div class="home">
+            <div id="container">
+                <aside class="banner" id="banner1" onclick="toggleDiv('banner1')">
+                    <div class="header">
+                        <h1>NEGOZIO DI ARTICOLI DI GDR</h1>
+                    </div>
+                    <!--il problema essenzialmente comprende questa parte qua -->
+                    <div class="content">
+                        <p>Per poter giocare ad un GDR, l'equipaggiamento minimo del player deve essere almeno un set di dadi, un blocco note, una penna e la sua scheda sempre pronta all'uso. Però, per gli amanti della lettura che vogliono approfondire le proprie conoscenze, esistono i Manuali del Giocatore, acquistabili online.</p>
+                        <a href="https://dndstore.wizards.com/eu"><img id="dnd" src="/images/&.PNG" title="Vai al sito"></a>
+                    </div>
+                </aside>
+                <aside class="banner" id="banner2" onclick="toggleDiv('banner2')">
+                    <div class="header">
+                        <h1>CANALI YOUTUBE DI GDR</h1>
+                    </div>
+                    <div class="content">
+                        <p>Esistono alcuni canali su YouTube che trattano in maniera approfondita l'argomento dei GDR attraverso le loro campagne. I principali sono "Inntale" (in Italia) e "MyCriticalRole" (in America). Lascio qua sotto i link ai loro canali. </p>
+                        <a href="https://www.youtube.com/InnTale"><img class="links" src="/images/inntale.PNG" title="Inntale"></a>
+                        <a href="https://www.youtube.com/@criticalrole"><img class="links" src="/images/mcr.PNG" title="MyCriticalRole"></a>
+                    </div>
+                </aside>
+                <aside class="banner" id="banner3" onclick="toggleDiv('banner3')">
+                    <div class="header">
+                        <h1>CREAZIONE DI UN PERSONAGGIO</h1>
+                    </div>
+                    <div class="content">
+                        <p>Qua sotto troverai il link ad un file pdf per la creazione di un personaggio. Nella sezione "PERSONAGGIO" ci sono alcune informazioni di base sui personaggi del mondo di D&D.</p>
+                        <a href="pgSheet.pdf"><img id="imgwarlock" src="/images/schedapg.WEBP" title="Vai al PDF"></a>
+                    </div>
+                </aside>
+                <!--fino a qua-->
+            </div>
+            <article>
+                <h1>GIOCHI DI RUOLO (GDR)</h1>
+                <p>In un gioco di ruolo, ad esempio D&D, i giocatori interpretano personaggi fantastici, come maghi,
+                    guerrieri, ladri o chierici, che si imbarcano in avventure epiche. Un "master di gioco" (o Dungeon
+                    Master in D&D) funge da narratore e arbitro delle regole, guidando la storia e presentando sfide e
+                    situazioni per i giocatori. Il master di gioco dà vita al mondo di gioco, interpretando personaggi non
+                    giocanti (PNG) e creando un'ambientazione ricca di dettagli.</p>
+            </article>
+            <article>
+                <h1>SISTEMA DI GIOCO</h1>
+                <p>I GDR utilizzano un sistema di gioco basato su regole e dadi. I giocatori lanciano dei dadi a facce multiple, come il classico dado a 20 facce (d20), per determinare l'esito di azioni, attacchi, e altri eventi nel gioco.
+                </p>
+                <img id="d20img" src="images/d20.PNG" title="d20">
+            </article>
+        </div>
+        <footer>
+            <p>Made By Stefano Massa</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

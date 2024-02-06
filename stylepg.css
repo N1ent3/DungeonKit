@@ -1,0 +1,82 @@
+@font-face {
+    font-family: DungeonFont2;
+    src: url(forgotten_uncial.ttf);
+}
+
+.pg{
+    margin-top:10px;
+    margin-left:50px;
+}
+
+.container{
+    width:1780px;
+    height: 100%;
+    padding: 10px;
+}
+
+.bigimage{
+    margin-top:60px;
+    margin-bottom:60px;
+    width:530px;
+    height:400px; 
+    background-color: #E9945B;
+}
+
+aside{
+    float:right;
+}
+
+#asideimg{
+    margin-right:300px;
+    float:right;
+    width:250px;
+    padding-top:6px;
+}
+
+.content{
+    margin-top:10px;
+    height:510px;
+    width:1200px;
+    font-family: DungeonFont2;
+    background-color:#5E3023;
+}
+
+section{
+    width:1200px;
+    height:70px;
+    background-color: #E9945B;
+}
+
+section h1{
+    text-align: center;
+}
+
+article{
+    width:670px;
+    height:250px;
+}
+
+.articleaside{
+    background-color: #64157E;
+    width:930px;
+    height:170px;
+    margin-top:3px;
+}
+
+.smallimage{
+    width:250px;
+    height:250px;
+}
+
+
+.text{
+    width:250px;
+    height:170px;
+    margin-top:3px;
+    
+}
+
+.container, .content, .bigimage{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}

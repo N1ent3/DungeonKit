@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author">
+        <meta content="dark light" name="color-scheme">
+        <title>DungeonKit - Personaggio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylepg.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="headerimg" src="/images/logo.PNG">
+        </header>
+        <nav>
+            <a href="index.html">
+                <img class="icon" src="/images/nav/home.PNG">HOME</a>
+            <a class="active">
+                <img class="icon" src="/images/nav/pgactive.PNG">PERSONAGGIO</a>
+            <div class="dropdown">
+                <button id="dropbtn" onclick="toggleDropdown()" class="dropbtn">
+                    <img class="icon" src="/images/nav/dice.PNG">Dadi</button>
+                <div id="diceDropdown" class="dropdown-content">
+                    <button class="buttonclick" onclick="rollDice(6, 'd6')" id="d6">D6</button>
+                    <button class="buttonclick" onclick="rollDice(8, 'd8')" id="d8">D8</button>
+                    <button class="buttonclick" onclick="rollDice(10, 'd10')" id="d10">D10</button>
+                    <button class="buttonclick" onclick="rollDice(12, 'd12')" id="d12">D12</button>
+                    <button class="buttonclick" onclick="rollDice(20, 'd20')" id="d20">D20</button>
+                </div>
+            </div>
+        </nav>
+        <div class="pg">
+            <div class="container">
+                <aside id="asideimg">
+                    <img class="bigimage" src="/images/races.PNG" title="Razze">
+                    <img class="bigimage" src="/images/classes.PNG" title="Classi">
+                </aside>
+                <div class="content">
+                    <section>
+                        <h1>RAZZE</h1>
+                    </section>
+                    <aside>
+                        <article class="articleaside">
+                            <h2>Elfi</h2>
+                            <p>Gli elfi sono una razza di creature affascinanti, agili e intrise di magia. Essi sono spesso rappresentati come esseri slanciati e bellissimi, con orecchie appuntite e occhi affilati. Gli elfi vivono per secoli, mantenendo una giovinezza e una vitalità che sfidano il passare del tempo. Sono spesso associati alla natura, alla magia e alla grazia.</p>
+                        </article>
+                        <aside>
+                            <img class="smallimage" title="Elfo" src="/images/elf.PNG">
+                        </aside>
+                        <article>
+                            <h3>Caratteristiche</h3>
+                            <ul>
+                                <li>Agilità: Gli elfi sono noti per la loro agilità e velocità. Sono abili nelle arti del movimento silenzioso e dell'evasione.</li>
+                                <li>Visione notturna: Gli elfi hanno la capacità di vedere al buio, il che li rende eccellenti nei confronti notturni.</li>
+                                <li>Resistenza alla magia: Gli elfi mostrano una naturale resistenza alla magia e sono in grado di resistere a incantesimi e effetti magici.</li>
+                            </ul>
+                        </article>
+                    </aside>
+                    <div class="text">
+                        <p>Sottoclassi:
+                            <ul>
+                                <li>Alti Elfi (High Elves)</li>
+                                <li>Boscaioli (Wood Elves)</li>
+                                <li>Elfi d'Argento (Drow)</li>
+
+                            </ul>
+                        </p>
+                    </div>
+                    <img class="smallimage" title="Drow" src="/images/drow.PNG">
+                </div>
+                <div class="content">
+                    <section>
+                        <h1>CLASSI</h1>
+                    </section>
+                    <aside>
+                        <article class="articleaside">
+                            <h2>Druido</h2>
+                            <p>I druidi sono custodi della natura, che hanno sviluppato una connessione spirituale e magica con il mondo naturale. Essi possono essere visti come guaritori, difensori dell'ambiente e guardiani degli equilibri naturali. La loro magia è radicata negli elementi e nella fauna, e possono trasformarsi in creature della natura.</p>
+                        </article>
+                        <aside>
+                            <img class="smallimage" title="Simbolo del druido" src="/images/symbol.PNG">
+                        </aside>
+                        <article>
+                            <h3>Caratteristiche</h3>
+                            <ul>
+                                <li>Magia naturale: I druidi ottengono il loro potere magico attraverso una connessione con la natura. Possono invocare venti, manipolare il terreno e guarire usando la magia naturale.</li>
+                                <li>Trasformazione animale: Una delle caratteristiche distintive dei druidi è la capacità di trasformarsi in creature animali. Possono diventare lupi, orsi, uccelli e altro ancora, guadagnando così abilità e capacità legate all'animale scelto.</li>
+                            </ul>
+                        </article>
+                    </aside>
+                    <div class="text">
+                        <p>I druidi seguono un allineamento neutrale, in quanto sono preoccupati per l'equilibrio naturale piuttosto che per concetti di bene o male.</p>
+                    </div>
+                    <img class="smallimage" title="Druido" src="/images/druid.WEBP">
+                </div>
+            </div>
+        </div>
+        <footer><p>Made By Stefano Massa</p></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
