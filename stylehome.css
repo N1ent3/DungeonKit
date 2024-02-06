@@ -17,6 +17,7 @@
 }
 
 article{
+    border-radius:20px;
     margin-top:10px;
     margin-right:10px;
     background-color: #5E3023;
@@ -51,6 +52,7 @@ aside p{
 }
 aside{
     background-color: #E9945B;
+    border-radius:20px;
     margin-left:10px;
     width:310px;
     height:150px;
