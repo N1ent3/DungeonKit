@@ -35,7 +35,10 @@ function toggleDiv(bannerId) {
   });
 }
 
-const modal = document.getElementById("layer");
+const modal = document.getElementById("modal");
+const modal_Layer = document.getElementById("layer");
+
 function openModal(){
   modal.classList.toggle("hidden");
+  modal_Layer.classList.toggle("hidden");
 }

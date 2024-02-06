@@ -8,51 +8,30 @@
     margin-left:50px;
 }
 
-.content{
-    align-items: center;
-    margin-top:10px;
-    height:510px;
-    width:1200px;
-    font-family: DungeonFont2;
-    background-color:#5E3023;
-}
-
-section{
-    width:1200px;
-    height:70px;
+#modal{
+    z-index:2;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height:400px;
     background-color: #E9945B;
 }
 
-section h1{
-    text-align: center;
-}
-
-article{
-    width:670px;
-    height:250px;
-}
-
-.articleaside{
-    background-color: #64157E;
-    width:930px;
-    height:170px;
-    margin-top:3px;
-}
-
-.smallimage{
-    width:250px;
-    height:250px;
-}
-
-
-.text{
-    width:250px;
-    height:170px;
-    margin-top:3px;
-    
+#modal2{
+    z-index:3;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    height:400px;
+    background-color: #703711;
 }
 
 #layer{
+    z-index:1;
     position:absolute;
     top: 50%;
     left: 50%;
