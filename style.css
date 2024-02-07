@@ -1,6 +1,10 @@
-@font-face {
+@font-face{
   font-family: DungeonFont;
-  src: url(DUNGRG__.TTF);
+  src:url(DUNGRG__.TTF)
+}
+@font-face {
+  font-family: DungeonFont2;
+  src: url(forgotten_uncial.ttf);
 }
 
 @keyframes comparsa {
@@ -51,6 +55,7 @@ nav a {
 
 nav a:hover {
   color: rgb(255, 255, 255);
+  background-color: #c0794a;
 }
 
 nav a.active {

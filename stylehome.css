@@ -1,13 +1,3 @@
-@font-face{
-    font-family: DungeonFont;
-    src:url(DUNGRG__.TTF)
-}
-
-@font-face {
-    font-family: DungeonFont2;
-    src: url(forgotten_uncial.ttf);
-}
-
 .home{
     margin:0 110px;
 }
