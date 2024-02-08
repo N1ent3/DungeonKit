@@ -26,6 +26,10 @@ header {
 body {
   margin: 0;
   background-color: #a6aaa963;
+  background-image: url("background/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .headerimg {
@@ -82,24 +86,29 @@ footer p {
 }
 
 .buttonclick {
-  border: 0;
-  background-color: #64157e;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #4a105e;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 12px 20px;
-  transition: all 0.1s linear;
+  margin: 10px auto;
+  letter-spacing: 2px;
+  font-family: DungeonFont;
+  color: #fffffe;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 1px 3px #000;
+  text-align: center;
+  padding: 10px 0;
+  background: radial-gradient(circle, #4a105e, #4a105e);
+  box-shadow: inset 0px 0px 5px 3px rgba(1,1,1,0.3);
+  transition: all 0.5s linear;
 }
 
-.buttonclick:active {
-  box-shadow: 0 2px 0 #6d178a;
-  transform: translateY(3px);
+.buttonclick:hover{
+  background: radial-gradient(circle, #64157e, #390c47);
+  box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2);
 }
 
+.buttonclick:active{
+  background: radial-gradient(circle, #b353d3, #772a91);
+  box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2);
+}
 .dropdown {
   float: right;
   overflow: hidden;
