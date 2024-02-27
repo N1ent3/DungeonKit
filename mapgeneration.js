@@ -32,31 +32,25 @@ var DungeonGenerator = (function(){
   
     function link2Steps(floorMap, r1, r2) {
       var flipCoin = Math.floor(Math.random()*2);
-      // TOP LEFT
       if(r1.row > r2.row && r1.col > r2.col) {
         if (flipCoin) {
-          // Vertical then horizontal hallway
           for (var i = r1.row-1; i >= r2.row + r2.h-1; i--)
             floorMap[i][r1.col] = EMPTY;
           for (var i = r1.col-1;  i >= r2.col + r2.w; i--)
             floorMap[r2.row+r2.h-1][i] = EMPTY;
         } else {
-          // H First
           for (var i = r1.col-1; i >= r2.col + r2.w-1; i--)
             floorMap[r1.row][i] = EMPTY;
           for (var i = r1.row-1;  i >= r2.row + r2.h; i--)
             floorMap[i][r2.col+r2.w-1] = EMPTY;
         }
-      // TOP RIGHT
       } else if(r1.row > r2.row && r1.col < r2.col) {
         if (flipCoin) {
-          // V First
           for (var i = r1.row-1; i >= r2.row + r2.h-1; i--)
             floorMap[i][r1.col+r1.w-1] = EMPTY;
           for (var i = r1.col + r1.w;  i < r2.col; i++)
             floorMap[r2.row+r2.h-1][i] = EMPTY;
         } else {
-          // H First
           for (var i = r1.col + r1.w; i <= r2.col; i++)
             floorMap[r1.row][i] = EMPTY;
           for (var i = r1.row-1;  i >= r2.row + r2.h; i--)
@@ -64,7 +58,6 @@ var DungeonGenerator = (function(){
   
         }
       } else {
-        // r2 is not above r1
         return false;
       }
       return true;
@@ -80,8 +73,8 @@ var DungeonGenerator = (function(){
       } else if (r2.col >= r1.col && r2.col < r1.col + r1.w) {
         linkStraightV(floorMap, r2, r1);
       } else {
-        if(!link2Steps(floorMap, r1, r2)) // if r2 is not on top
-          link2Steps(floorMap, r2, r1);   // r1 is on top
+        if(!link2Steps(floorMap, r1, r2))
+          link2Steps(floorMap, r2, r1);
       }
     }
   
