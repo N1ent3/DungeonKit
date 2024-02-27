@@ -68,6 +68,7 @@ nav a.active {
 }
 
 footer {
+  font-family:DungeonFont2;
   background-color: #121313;
   opacity: 60%;
   height: 110px;
